@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@100&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 70.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  /*navbar style*/
+  .navbar input[type='checkbox'],
+  .navbar .hamburger-lines{
+    display: none;
+  }
+  .navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background:#f0eeee;
+    color: #000;
+    opacity: 0.85;
+    height: 50px;
+     z-index: 12;
+  }
+  .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  .menu-items{
+    order: 2;
+    display: flex;
+    padding: 3.55rem;
+  }
+  .menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+     
+  }
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .logo{
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar a{
+  color:#444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  }
+  .navbar a:hover{
+    color: #117964;
+  }
+  .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  
+  
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+.container {
+  padding: 0 16px;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+
+.button:hover {
+  background-color: #555;
+}
+.link:visited{
+  text-decoration: none;
+
+}  
+.link{
+  text-decoration: none;
+  color: #f0eeee;
+  font-size: 20px;
+
+}
+
+.heading{
+
+  font-size: 70px;
+
+}
+footer h2{
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #2c2727;
+  background-color: #c2b7b7;
+ 
+  height: 100px;}
+
+</style>
+<body style="background-color: white;">
+ 
+    <nav class="navbar">
+        <div class="navbar-container container">
+           <input type="checkbox">
+           <div class="humburger-line">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+           </div>
+        
+            <ul class="menu-items">
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT US.html">ABOUT US</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="OUR TEAM.html">OUR TEAM</a></li>
+                <li><a href="CONTEC.html">CONTECT</a></li>
+            </ul>
+            <h1 class="logo"> INDIAN FLAVOUR</h1>
+        </div>
+    </nav>
+  
+      <center><h class="heading">OUR TEAM</h></center>
+      <br>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./Depinder Chhibber.jpg" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Depinder Chhibber</h2>  
+            <p>Depinder Chhibber, the MasterChef Australia contestant we all were rooting for, has been eliminated from the show. The Indian-origin chef who ruled the MasterChef kitchen with traditional Indian food made it to the top eight but somehow struggled to master the native ingredients of Australia’s Northern Territory.</p> 
+            <br>
+            <p><button class="button"><a href="https://www.instagram.com/depinder_/" class="link">Content</a></button></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./aruna-vijay.jpg" alt="Mike" style="width: 94%">
+          <div class="container">
+            <h2>Aruna Vijay</h2>
+            <p>MasterChef India' contestant Aruna Vijay from Chennai spoke about exploring South Indian cuisine and how it is not just confined to idli, dosa, and rice; there is a lot more in South India.</p>
+            <br>
+            <p><button class="button"><a href="https://www.instagram.com/aruna_vijay_masterchef/" class="link">Contact</a></button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./Sanjeev kapoor.jfif" alt="John" style="width:100% " height="300px">
+          <div class="container">
+            <h2>Sanjeev kapoor</h2>
+          
+            <p>here is something unique about the South Indian food that evokes extreme devotion from all who take pride in its food culture. And South Indian food does not stop at the dosa and the idli, the payasam or the molagapudi</p>
+                 <br>
+            <p><button class="button"><a href="https://www.instagram.com/sanjeevkapoor/" class="link">Content</a></button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <section>
+      <footer id="footer" >
+    <h2>Restaurant &copy; All right reserved</h2>
+      </footer>
+    
+    </section> 
+       
+  
+  </body>
+   
+    
+    
+
+</head>

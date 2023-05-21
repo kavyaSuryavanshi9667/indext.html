@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@100&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 70.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  /*navbar style*/
+  .navbar input[type='checkbox'],
+  .navbar .hamburger-lines{
+    display: none;
+  }
+  .navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background:#f0eeee;
+    color: #000;
+    opacity: 0.85;
+    height: 50px;
+     z-index: 12;
+  }
+  .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  .menu-items{
+    order: 2;
+    display: flex;
+    padding: 3.55rem;
+  }
+  .menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+     
+  }
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .logo{
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar a{
+  color:#444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  }
+  .navbar a:hover{
+    color: #117964;
+  }
+#about{
+  padding: 10% 0px;
+  background-color: #f5f5f5;
+}
+
+.about-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+#about h2{
+ font-size: 3.2rem;
+}
+#about p{
+  font-size: 1.6rem;
+  color: #555;
+}
+#about.small{
+  font-size: 1,6rem;
+  color: #555;
+  font-weight: 600;
+}
+.about-img{
+  flex: 1 1 400px;
+  padding: 30px;
+  box-shadow: 0px 1px 4px 0px #aaa;
+  transform: translateX(50%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes  about-img-animation{
+100% {
+transform: translate(0);
+  }
+  
+}
+.about-text{
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translateX(-50%);
+  animation: about-text-animation 1s ease-in-out forwards;
+  
+}
+@keyframes  about-text-animation{
+100% {
+transform: translate(0);
+  }
+  
+}
+.about-img img{
+  display: block;
+  height:400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+footer h2{
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #2c2727;
+  background: rgba(141, 133, 133, 0.418);
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+           <input type="checkbox">
+           <div class="humburger-line">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+           </div>
+        
+            <ul class="menu-items">
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT US.html">ABOUT US</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="OUR TEAM.html">OUR TEAM</a></li>
+                <li><a href="CONTEC.html">CONTECT</a></li>
+            </ul>
+            <h1 class="logo"> INDIAN FLAVOUR</h1>
+        </div>
+    </nav>
+     <section id="about">
+      <div class="about-wrapper container">
+      <div class="about-text">
+        <p class="small">About us</p>
+      <h2>We've been making healthy food for last 10 years </h2>
+      <p>Most of the rich, buttery Indian dishes popular in the US, such as crispy naan, creamy butter chicken, and toasty samosas, originate from the South India in northern India. While these dishes are undoubtedly delicious, they only represent a fraction of what India has to offer.</p>
+   
+      </div>
+      <div class="about-img">
+        <img src="./3-4.png" alt="About us">
+      </div>
+      </div>
+     </section>
+
+     <section>
+      <footer id="footer">
+    <h2>Restaurant &copy; All right reserved</h2>
+      </footer>
+    
+  </section>
+
+
+
+
+  
+</body>
+</html>

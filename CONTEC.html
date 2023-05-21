@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@100&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 70.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  /*navbar style*/
+  .navbar input[type='checkbox'],
+  .navbar .hamburger-lines{
+    display: none;
+  }
+  .navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background:#f0eeee;
+    color: #000;
+    opacity: 0.85;
+    height: 50px;
+     z-index: 12;
+  }
+  .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  .menu-items{
+    order: 2;
+    display: flex;
+    padding: 3.55rem;
+  }
+  .menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+     
+  }
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .logo{
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar a{
+  color:#444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  }
+  .navbar a:hover{
+    color: #117964;
+  }
+  #contact {
+  padding: 5rem 0;
+  
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+  
+}
+#footer h2{
+    text-align: center;
+  font-size: 2.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #2c2727;
+  background: rgba(141, 133, 133, 0.418);
+}
+.h{
+width: 200px;
+height: 40px;
+border-radius: 8px;
+color: white;
+background-color: plum;
+margin-top: 20px;
+border: plum;
+}
+.h:hover{
+  background-color: purple;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+           <input type="checkbox">
+           <div class="humburger-line">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+           </div>
+        
+            <ul class="menu-items">
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT US.html">ABOUT US</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="OUR TEAM.html">OUR TEAM</a></li>
+                <li><a href="CONTEC.html">CONTECT</a></li>
+            </ul>
+            <h1 class="logo"> INDIAN FLAVOUR</h1>
+        </div>
+    </nav>
+
+    <section id="contact">
+      <div class="contact-container container">
+          <div class="contact-img">
+              
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14011.553719626554!2d77.36689595!3d28.6031237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1682669170600!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+              
+          </div>
+          
+           <form class="form-container" form ="send_form"  onsubmit="submit_form()" method="post" >
+            <div>
+                <h2>Contact Us</h2>
+              <input type="name" placeholder="Your Name" required>
+              <input type="email" placeholder="E-Mail" required>
+              <textarea cols="30" rows="6"  type="massage"placeholder="Type Your Message" required></textarea>
+            <center>  <a href="#" class="btn-btn-primary"><button class="h">send</button></a></center>
+          </div>
+           </form>
+           
+      </div>
+      
+  
+            <script type="text/javascript">  
+            function submit_form(){  
+          alert("send your massages successfully");  
+                }  
+              function create(){  
+             window.location="signup.html";  
+                    }  
+</script>    
+
+    
+  </section>
+  <section>
+    <footer id="footer">
+        <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
+  </section>
+</body>
+</html>
+
+
+  

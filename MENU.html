@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@100&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 70.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  /*navbar style*/
+  .navbar input[type='checkbox'],
+  .navbar .hamburger-lines{
+    display: none;
+  }
+  .navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background:#f0eeee;
+    color: #000;
+    opacity: 0.85;
+    height: 50px;
+     z-index: 12;
+  }
+  .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  .menu-items{
+    order: 2;
+    display: flex;
+    padding: 3.55rem;
+  }
+  .menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+     
+  }
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .logo{
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar a{
+  color:#444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  }
+  .navbar a:hover{
+    color: #117964;
+  }
+
+  .food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #117964;
+  font-weight: 700;
+}
+#footer h2{
+    text-align: center;
+  font-size: 2.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #2c2727;
+  background: rgba(141, 133, 133, 0.418);
+}
+  
+body{
+  background-color: #ddc3c3;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+           <input type="checkbox">
+           <div class="humburger-line">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+           </div>
+        
+            <ul class="menu-items">
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT US.html">ABOUT US</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="OUR TEAM.html">OUR TEAM</a></li>
+                <li><a href="CONTEC.html">CONTECT</a></li>
+            </ul>
+            <h1 class="logo"> INDIAN FLAVOUR</h1>
+        </div>
+    </nav>
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+          <div class="food-menu-item">
+              <div class="food-img">
+                  <img src="./Appams.jpg" alt="" />
+              </div>
+              <div class="food-description">
+                <h2 class="food-titile">Food Menu Item 1</h2>
+                <p>
+                 <span> Appamsand ishtu: pancakes and stew</span>
+                  Appams are like thin crepes, made from a batter of fermented rice flour and coconut milk. Soft, light and fluffy, they go best with ishtu – a fresh coconut milk-infused stew of veggies, shallots, mild spices and meat of your choice.
+                </p>
+                <p class="food-price">Price: &#8377; 250</p>
+            </div>
+          </div>
+          <div class="food-menu-item">
+              <div class="food-img">
+                  <img src="./pexels-saveurs-secretes-5560763.jpg" alt="" />
+              </div>
+              <div class="food-description">
+                  <h2 class="food-titile">Food Menu Item 2</h2>
+                  <p>
+                   <span> Dosas: paper-thin crepes</span>
+                    A traditional breakfast food made of fermented rice-and-lentil batter, a dosa is much like a crispy thin crepe.
+                </p>
+                <p class="food-price">Price: &#8377; 200</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+              <img src="./istockphoto-1149795531-612x612.jpg" alt="" />
+          </div>
+          <div class="food-description">
+              <h2 class="food-titile">Food Menu Item 3</h2>
+              <p>
+               <span> Uttapams: pizza-pancake hybrids</span>
+                it’s an uttapam. A batter of fermented rice and lentils is ladled on to a griddle. Chopped tomato, onion, chillies, carrot, coconut and other toppings are then sprinkled on. The result is a fluffy, porous, delicious uttapam, softer than a dosa, and tastes great with chutneys or without.
+            </p>
+            <p class="food-price">Price: &#8377; 175</p>
+        </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+              <img src="./Pongal.jpg" alt="" />
+          </div>
+          <div class="food-description">
+              <h2 class="food-titile">Food Menu Item 4</h2>
+              <p>
+               <span> Pongal</span>
+               Pongal is a sweet rice dish that is usually eaten during special or ceremonial occasions in Sri Lanka. It is usually cooked in a clay pot over an open fire. Milk and water are boiled first, and according to Tamil beliefs, if the liquid spills over the pot it will bring good luck and prosperity to the family.
+            </p>
+            <p class="food-price">Price: &#8377; 200</p>
+        </div>
+    </div>
+    <div class="food-menu-item">
+      <div class="food-img">
+          <img src="./Upma.jfif" alt="" />
+      </div>
+      <div class="food-description">
+          <h2 class="food-titile">Food Menu Item 5</h2>
+          <p>
+           <span> Upma</span>
+           Upma is a wholesome Indian dish made with dry semolina or rice flour, cooked into a thick porridge. Traditionally served hot for breakfast, its taste is slightly bland, so various nuts, beans, and spices such as turmeric and chiles are commonly added to the dish in order to improve its flavors.
+
+        </p>
+        <p class="food-price">Price: &#8377; 150</p>
+    </div>
+</div>
+<div class="food-menu-item">
+  <div class="food-img">
+      <img src="./Sambar.jfif" alt="" />
+  </div>
+  <div class="food-description">
+      <h2 class="food-titile">Food Menu Item 6</h2>
+      <p>
+       <span> Sambar</span>
+       Sambar is a popular curry dish prepared with a tamarind-based broth, lentils, and vegetables. It originates from Tamil Nadu, but it is also very popular in Sri Lanka and throughout South India. The dish is traditionally served with steamed rice or various Indian flatbreads.
+      </p>
+
+
+       
+    <p class="food-price">Price: &#8377; 165</p>
+</div>
+</div>
+</div>
+</section> 
+<section>
+  <footer id="footer">
+      <h2>Restraunt &copy; all rights reserved</h2>
+  </footer>
+</section>                 
+</body>
+</html>
